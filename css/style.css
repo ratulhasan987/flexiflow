@@ -1,0 +1,481 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f4f4f4;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header {
+  color: #fff;
+  position: fixed;
+  align-items: center;
+  background: transparent;
+  width: 100%;
+  z-index: 10000;
+}
+header .headerItems {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffffff;
+  background-color: rgba(119, 98, 98, 0.231372549);
+  font-weight: 700;
+  line-height: 56px;
+}
+header .headerItems .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+header .headerItems .menu-button {
+  display: none;
+}
+header .headerItems .nav-menu {
+  list-style: none;
+  display: flex;
+}
+header .headerItems .nav-menu a {
+  text-decoration: none;
+  position: relative;
+}
+header .headerItems .nav-menu a::after {
+  content: "";
+  position: absolute;
+  background-color: rgb(255, 81, 58);
+  height: 6px;
+  width: 0;
+  left: -18%;
+  margin-top: 25px;
+  transition: 0.3s;
+  border-radius: 50%;
+}
+header .headerItems .nav-menu a:hover::after {
+  width: 6px;
+}
+
+.nav-menu li {
+  margin: 0 1rem;
+  text-transform: uppercase;
+}
+.nav-menu li:hover {
+  color: #14e9e9;
+}
+
+.hero {
+  height: 100vh;
+  background: linear-gradient(rgba(33, 33, 33, 0.522), rgba(33, 33, 33, 0.522)), url("/images/home-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  position: relative;
+  color: #fff;
+  padding: 6rem 2rem;
+  text-align: center;
+  background-repeat: no-repeat;
+  border-bottom-left-radius: 20%;
+  border-bottom-right-radius: 20%;
+}
+
+.buttonH {
+  padding-top: 2rem;
+  gap: 1rem;
+}
+.buttonH .cta-button {
+  background: #0d70da;
+  color: white;
+  padding: 0.7rem 1.8rem;
+  border-radius: 1rem;
+}
+.buttonH .cta-button:hover {
+  background: #1203e9;
+  color: white;
+}
+.buttonH .cta-buttonR {
+  background: #eb533f;
+  color: white;
+  padding: 0.7rem 1.5rem;
+  border-radius: 1rem;
+}
+.buttonH .cta-buttonR:hover {
+  background: #dd3822;
+  color: #f0e8e8;
+}
+
+.carousel .carousel-item {
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: -220px;
+}
+
+.img-area img {
+  width: 300%;
+  height: 600px;
+}
+
+.help,
+.market,
+.about,
+.contact {
+  padding: 2rem;
+}
+
+.help {
+  padding-top: 8rem;
+}
+.help .titleH {
+  text-align: center;
+}
+.help .helpCard {
+  display: flex;
+  padding: 6rem;
+  padding-top: 4rem;
+  gap: 2rem;
+}
+.help .helpCard .cardH {
+  text-align: center;
+  height: 270px;
+  width: 230px;
+  transition: 0.3s ease-in-out;
+  padding-top: 2rem;
+}
+.help .helpCard .cardH i {
+  color: #14a3db;
+  padding-bottom: 2rem;
+}
+.help .helpCard .cardH:hover {
+  transform: translateY(20px);
+  background-color: #f7f2f2;
+  box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+}
+.help .helpCard .cardH:hover i {
+  color: #eb533f;
+}
+
+.market {
+  padding: 0rem 6rem 6rem 6rem;
+  background: #fffdfd;
+  border-bottom-left-radius: 40%;
+  border-top-right-radius: 15%;
+}
+.market .marketTrends {
+  display: flex;
+  gap: 8rem;
+  padding: 4rem;
+}
+.market .marketTrends .marketT {
+  height: 300px;
+  width: 300px;
+  background: linear-gradient(rgba(33, 33, 33, 0.522), rgba(33, 33, 33, 0.522)), url("/images/market-trends.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 3rem 18rem;
+  transition: 3s ease-in-out;
+}
+.market .marketTrends .marketT:hover {
+  transform: translateY(20px);
+}
+.market .marketTrends .marketT .bgMarket img {
+  height: 300px;
+  width: 300px;
+  transition: 3s ease-in-out;
+}
+.market .marketTrends .marketT .bgMarket img:hover {
+  transform: translateY(20px);
+}
+
+.mifg {
+  padding-top: 2rem;
+  border-top-right-radius: 15%;
+}
+.mifg .mifgF {
+  display: flex;
+  gap: 6rem;
+}
+.mifg .mifgF .mifgP img {
+  height: 400px;
+  width: 500px;
+}
+.mifg .mifgF .mifgWCard {
+  display: flex;
+}
+.mifg .mifgF .mifgWCard .two1 .cards {
+  display: flex;
+  padding: 1rem;
+  transition: 0.3s ease-in-out;
+  padding: 2rem;
+}
+.mifg .mifgF .mifgWCard .two1 .cards:hover {
+  transform: translateY(20px);
+  background-color: #f7f2f2;
+  box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+}
+.mifg .mifgF .mifgWCard .two2 .cards {
+  display: flex;
+  padding: 1rem;
+  transition: 0.3s ease-in-out;
+  padding: 2rem;
+}
+.mifg .mifgF .mifgWCard .two2 .cards:hover {
+  transform: translateY(20px);
+  background-color: #f7f2f2;
+  box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+}
+
+.circularProgress {
+  height: 100vh;
+  display: flex;
+  padding: 10rem;
+  gap: 2rem;
+  background: rgb(199, 198, 198);
+  border-bottom-left-radius: 0%;
+  border-bottom-right-radius: 50%;
+  border-top-right-radius: 0%;
+  border-top-left-radius: 10%;
+}
+.circularProgress .mainWrapper {
+  transition: 0.3s ease-in-out;
+}
+.circularProgress .mainWrapper .wrapper {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  padding: 2rem;
+}
+.circularProgress .mainWrapper .wrapper .td {
+  color: #0d70da;
+  text-align: center;
+}
+.circularProgress .mainWrapper:hover {
+  transform: translateY(20px);
+  background-color: #f7f2f2;
+  box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 1rem;
+}
+.circularProgress .item {
+  width: 100%;
+  height: 100%;
+  transform: rotate(-90deg);
+}
+.circularProgress .circle {
+  fill: none;
+  stroke: #ddd;
+  stroke-width: 10px;
+  stroke-dasharray: 590.48;
+  stroke-dashoffset: 0;
+}
+.circularProgress .bar {
+  fill: none;
+  stroke: rgb(115, 9, 201);
+  stroke-width: 10px;
+  stroke-dasharray: 590.48;
+  stroke-dashoffset: 0;
+  animation: animate 2s ease-in-out forwards;
+}
+.circularProgress .bar1 {
+  fill: none;
+  stroke: rgb(26, 135, 238);
+  stroke-width: 10px;
+  stroke-dasharray: 380.48;
+  stroke-dashoffset: 0;
+  animation: animate 2s ease-in-out forwards;
+}
+.circularProgress .bar2 {
+  fill: none;
+  stroke: rgb(4, 0, 255);
+  stroke-width: 10px;
+  stroke-dasharray: 570.48;
+  stroke-dashoffset: 0;
+  animation: animate 2s ease-in-out forwards;
+}
+.circularProgress .bar3 {
+  fill: none;
+  stroke: orangered;
+  stroke-width: 10px;
+  stroke-dasharray: 540.48;
+  stroke-dashoffset: 0;
+  animation: animate 2s ease-in-out forwards;
+}
+.circularProgress .content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1.4);
+  font-size: 30px;
+  font-weight: bold;
+  font-family: "Bebas Neue", sans-serif;
+}
+@keyframes animate {
+  from {
+    stroke-dashoffset: 735.48;
+  }
+  to {
+    stroke-dashoffset: 183.87;
+  }
+}
+
+.price {
+  padding: 10rem;
+}
+.price .priceCards {
+  display: flex;
+  gap: 2rem;
+}
+.price .priceCards .priceCard1 {
+  display: flex;
+  background: white;
+  height: 400px;
+  width: 330px;
+  padding: 1rem;
+  gap: 1rem;
+  text-align: left;
+  box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 1rem;
+}
+.price .priceCards .priceCard1 .prices p {
+  font-size: 10px;
+}
+.price .priceCards .priceCard1 .tittleDes {
+  padding-top: 3rem;
+}
+.price .priceCards .priceCard1 .tittleDes .buttonH {
+  padding-top: 4rem;
+}
+.price .priceCards .priceCard2 {
+  display: flex;
+  background: white;
+  height: 400px;
+  width: 330px;
+  padding: 1rem;
+  gap: 1rem;
+  text-align: left;
+  border-radius: 1rem;
+  transition: 0.3s ease-in-out;
+}
+.price .priceCards .priceCard2:hover {
+  box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+  transform: translateY(20px);
+  background-color: #f7f2f2;
+}
+.price .priceCards .priceCard2 .prices p {
+  font-size: 10px;
+}
+.price .priceCards .priceCard2 .tittleDes {
+  padding-top: 3rem;
+}
+.price .priceCards .priceCard2 .tittleDes .buttonH {
+  padding-top: 4rem;
+}
+.price .priceCards .priceCard3 {
+  display: flex;
+  background: white;
+  height: 400px;
+  width: 330px;
+  padding: 1rem;
+  gap: 1rem;
+  text-align: left;
+  transition: 0.3s ease-in-out;
+  border-radius: 1rem;
+}
+.price .priceCards .priceCard3:hover {
+  box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+  transform: translateX(20px);
+  background-color: #f7f2f2;
+}
+.price .priceCards .priceCard3 .prices p {
+  font-size: 10px;
+}
+.price .priceCards .priceCard3 .tittleDes {
+  padding-top: 3rem;
+}
+.price .priceCards .priceCard3 .tittleDes .buttonH {
+  padding-top: 4rem;
+}
+.contact {
+  background-color: #646161;
+  color: #f4f4f4;
+  height: 60vh;
+  border-top-left-radius: 20%;
+  padding: 4rem;
+}
+.contact .contacts {
+  display: flex;
+  gap: 3rem;
+}
+.contact .contacts .fotonSocial .titleDesIcons {
+  gap: 3rem;
+}
+.contact .contacts .fotonSocial .titleDesIcons .contactIcons li {
+  display: flex;
+}
+.contact .contacts .fotonSocial .titleDesIcons .contactIcons li i {
+  padding: 1rem 1rem 0rem 0rem;
+}
+.contact .contacts .fotonSocial .titleDesIcons .icons {
+  font-size: 40px;
+  padding: 0.5rem;
+}
+.contact .contacts .fotonSocial .imgLogo {
+  display: flex;
+  padding-top: 1rem;
+}
+.contact .contacts .fotonSocial .imgLogo .appStore {
+  height: 20px;
+  width: 60px;
+  padding-top: 0.3rem;
+  border-radius: 0.2rem;
+}
+.contact .contacts .fotonSocial .imgLogo .playStore {
+  height: 30px;
+  width: 60px;
+  padding-bottom: 0.3rem;
+}
+
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+
+@media (max-width: 768px) {
+  .menu-button {
+    display: block;
+  }
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+  }
+  .nav-menu.open {
+    display: flex;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.hero,
+.help .features,
+.about,
+.contact {
+  animation: fadeIn 2s ease-in-out;
+}/*# sourceMappingURL=style.css.map */
