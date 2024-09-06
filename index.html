@@ -1,39 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FlexiFlow - Modern Responsive Design</title>
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
-    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-   
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/style.min.css">
 </head>
+
 <body>
     <!-- header section start.............. -->
-    <header>
-        <!-- <nav> -->
-            <div class="headerItems">
-                <div class="logo" >FlexiFlow</div>
-                <button class="menu-button">Menu</button>
-                <ul class="nav-menu">
-                    <li>
-                        <a class="firstItem" href="#home">Home</a>
-                    </li>
-                    <li><a href="#market">Markets</a></li>
-                    <li><a href="#price">Pricing</a></li>
-                    <li><a href="#circularProgress">Progress</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    
 
-                </ul>
-            </div>
-          
-        <!-- </nav> -->
+    <header>
+        <div class="headerItems">
+            <div class="logo">FlexiFlow</div>
+            <button class="menu-button"><i class="fa-solid fa-bars"></i></button>
+            <ul class="nav-menu">
+                <li><a class="firstItem" href="#home">Home</a></li>
+                <li><a href="#market">Markets</a></li>
+                <li><a href="#price">Pricing</a></li>
+                <li><a href="#circularProgress">Progress</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
     </header>
+
     <!-- header section end..............-->
     <main>
         <!-- home section start........... -->
@@ -44,73 +42,72 @@
                 <a href="#" class="cta-buttonR">Read More</a>
                 <a href="#contact" class="cta-button">Get Started</a>
             </div>
-<!-- ---------------------------->
-<div class="carousel">
-    <a class="carousel-item" href="#">
-        <div class="testi">
-            <div class="img-area">
-                <img src="/images/dashboard-slider-1.jpg">
-                <!-- <img src="   https://foton.qodeinteractive.com/wp-content/uploads/2018/07/home-7-img-5.jpg" > -->
+            <!-- ---------------------------->
+            <div class="carousel">
+                <a class="carousel-item" href="#">
+                    <div class="testi">
+                        <div class="img-area">
+                            <img src="/images/dashboard-slider-1.jpg">
+                            <!-- <img src="   https://foton.qodeinteractive.com/wp-content/uploads/2018/07/home-7-img-5.jpg" > -->
+                        </div>
+                    </div>
+                </a>
+                <a class="carousel-item" href="#">
+                    <div class="testi">
+                        <div class="img-area">
+                            <!-- <img src="/images/dashboard-slider-2.jpg"> -->
+                            <img src=" https://foton.qodeinteractive.com/wp-content/uploads/2018/06/saas-slajder-2.jpg">
+                        </div>
+                    </div>
+                </a>
+                <a class="carousel-item" href="#">
+                    <div class="testi">
+                        <div class="img-area">
+                            <!-- <img src="/images/dashboard-slider-3.jpg"> -->
+                            <img src="https://foton.qodeinteractive.com/wp-content/uploads/2018/06/saas-slajder-3.jpg">
+                        </div>
+                    </div>
+                </a>
             </div>
-        </div>
-    </a>
-    <a class="carousel-item" href="#">
-        <div class="testi">
-            <div class="img-area">
-                <!-- <img src="/images/dashboard-slider-2.jpg"> -->
-                <img src=" https://foton.qodeinteractive.com/wp-content/uploads/2018/06/saas-slajder-2.jpg" >
-            </div>
-        </div>
-    </a>
-    <a class="carousel-item" href="#">
-        <div class="testi">
-            <div class="img-area">
-                <!-- <img src="/images/dashboard-slider-3.jpg"> -->
-                <img src="https://foton.qodeinteractive.com/wp-content/uploads/2018/06/saas-slajder-3.jpg">
-            </div>
-        </div>
-    </a>
-</div>
 
-<!-- script for sliding dashboard..... -->
-<script
-src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-<script>
-$(document).ready(function(){
-  $('.carousel').carousel({
-          padding: 200
-  });
-  autoplay();
-  function autoplay() {
-      $('.carousel').carousel('next');
-      setTimeout(autoplay, 4500);
-  }
-});
-</script>
-<!-- ---------------------------->
+            <!-- script for sliding dashboard..... -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+            <script>
+                $(document).ready(function () {
+                    $('.carousel').carousel({
+                        padding: 200
+                    });
+                    autoplay();
+                    function autoplay() {
+                        $('.carousel').carousel('next');
+                        setTimeout(autoplay, 4500);
+                    }
+                });
+            </script>
+            <!-- ---------------------------->
 
 
         </section>
         <!-- home section End........... -->
 
-       <!-- help section strat....... -->
+        <!-- help section strat....... -->
         <section id="help" class="help">
             <h3 class="titleH">We can help you succeed.</h3>
             <div class="helpCard flex">
-               <a href="#">
-                <div class="cardH">
-                    <i class='far fa-comment-dots' style='font-size:70px'></i>
-                    <h5 class="cardTitle" style="padding-top: 0;">Great Advices</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                <a href="#">
+                    <div class="cardH">
+                        <i class='far fa-comment-dots' style='font-size:70px'></i>
+                        <h5 class="cardTitle" style="padding-top: 0;">Great Advices</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
                     </div>
-               </a>
+                </a>
                 <a href="#">
                     <div class="cardH">
                         <i class='fa fa-headphones' aria-hidden="true" style='font-size:70px'></i>
                         <h5 class="cardTitle">24/7 Support</h5>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                        </div>
+                    </div>
                 </a>
                 <a href="#">
                     <div class="cardH">
@@ -118,110 +115,116 @@ $(document).ready(function(){
                         <!-- <i class="fa fa-thumbs" aria-hidden="true"></i> -->
                         <h5 class="cardTitle">Optimal Choice</h5>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                        </div>
-                </a>
-               <a href="#">
-                <div class="cardH">
-                    <i class='fas fa-american-sign-language-interpreting' style='font-size:70px'></i>
-                    <!-- <i class="fa fa-codiepie"  style='font-size:70px'></i> -->
-                    <h5 class="cardTitle">Clear Navigation</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
                     </div>
-               </a>
-             
+                </a>
+                <a href="#">
+                    <div class="cardH">
+                        <i class='fas fa-american-sign-language-interpreting' style='font-size:70px'></i>
+                        <!-- <i class="fa fa-codiepie"  style='font-size:70px'></i> -->
+                        <h5 class="cardTitle">Clear Navigation</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                    </div>
+                </a>
+
             </div>
         </section>
-       <!-- help section end....... -->
+        <!-- help section end....... -->
 
-       <!-- Market trend start..... -->
+        <!-- Market trend start..... -->
         <section id="market" class="market">
             <div class="marketTrends">
                 <div class="marketT">
                     <div class="bgMarket">
-                    <!-- <img src="https://foton.qodeinteractive.com/wp-content/uploads/2018/06/home-7-img-1.jpg" alt=""> -->
-                    <!-- <img src="/images/dashboard-slider-3.jpg" style="transform: translate(60px,120px);" alt=""> -->
-                    <img src="/images/dashboard-slider-3.jpg">
-                  
-                </div>
+                        <!-- <img src="https://foton.qodeinteractive.com/wp-content/uploads/2018/06/home-7-img-1.jpg" alt=""> -->
+                        <!-- <img src="/images/dashboard-slider-3.jpg" style="transform: translate(60px,120px);" alt=""> -->
+                        <img src="/images/dashboard-slider-3.jpg">
+
+                    </div>
                 </div>
                 <div class="marketW">
-                    <div class="tittleDes" >
-                        <h2 class="cardTitle" style="color: rgb(199, 61, 61);">Keep track of the overall market trends & more</h2>
+                    <div class="tittleDes">
+                        <h2 class="cardTitle" style="color: rgb(199, 61, 61);">Keep track of the overall market trends &
+                            more</h2>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam, asperiores.</p>
                         <div class="buttonH" style="padding-top: 2rem;">
                             <a href="#" class="cta-buttonR">Read More</a>
                         </div>
-                       </div>
+                    </div>
                 </div>
             </div>
-         
-        </section>
-       <!-- Market Trend Ends.... -->
 
-       <!-- mifg section strat....... -->
-       <section id="mifg" class="mifg">
-        <div class="mifgF flex">
-            <div class="mifgP" >
-             <img src="https://foton.qodeinteractive.com/wp-content/uploads/2018/06/home-7-img-2.png" alt="">
-            </div>
-            
+        </section>
+        <!-- Market Trend Ends.... -->
+
+        <!-- mifg section strat....... -->
+        <section id="mifg" class="mifg">
+            <div class="mifgF flex">
+                <div class="mifgP">
+                    <img src="https://foton.qodeinteractive.com/wp-content/uploads/2018/06/home-7-img-2.png" alt="">
+                </div>
+
                 <div class="mifgWCard flex">
-                   <div class="two1">
-                  
-                    <div class="cards">
-                        <i class='fas fa-clipboard-check' style='font-size:48px;color:rgb(41, 138, 230); padding: 1rem'></i>
-                        <div class="tittleDes">
-                        <h5 class="cardTitle" style="padding-top: 0;">Market Analysis</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                       </div>
-                    </div>
-                    <div class="cards">
-                        <i class='fas fa-clipboard-check' style='font-size:48px;color:rgb(190, 28, 6); padding: 1rem'></i>
-                        <div class="tittleDes">
-                        <h5 class="cardTitle" style="padding-top: 0;">Financial Advices</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                       </div>
-                    </div>
-                   </div>
-                   
-                     <div class="two2">
+                    <div class="two1">
+
                         <div class="cards">
-                            <i class='fas fa-clipboard-check' style='font-size:48px;color:rgb(53, 66, 253); padding: 1rem'></i>
-                           <div class="tittleDes">
-                            <h5 class="cardTitle" style="padding-top: 0;">Innovative ideas</h5>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                           </div>
-                        </div> <div class="cards">
-                            <i class='fas fa-clipboard-check' style='font-size:48px;color:rgb(41, 138, 230); padding: 1rem'></i>
-                           <div class="tittleDes">
-                            <h5 class="cardTitle" style="padding-top: 0;">Great Solution</h5>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                           </div>
+                            <i class='fas fa-clipboard-check'
+                                style='font-size:48px;color:rgb(41, 138, 230); padding: 1rem'></i>
+                            <div class="tittleDes">
+                                <h5 class="cardTitle" style="padding-top: 0;">Market Analysis</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                            </div>
                         </div>
-                     </div>
-                    
-                 </div>
-            
-        </div>
-        
-       </section>
-       <!-- mifg section end....... -->
-        
+                        <div class="cards">
+                            <i class='fas fa-clipboard-check'
+                                style='font-size:48px;color:rgb(190, 28, 6); padding: 1rem'></i>
+                            <div class="tittleDes">
+                                <h5 class="cardTitle" style="padding-top: 0;">Financial Advices</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="two2">
+                        <div class="cards">
+                            <i class='fas fa-clipboard-check'
+                                style='font-size:48px;color:rgb(53, 66, 253); padding: 1rem'></i>
+                            <div class="tittleDes">
+                                <h5 class="cardTitle" style="padding-top: 0;">Innovative ideas</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                            </div>
+                        </div>
+                        <div class="cards">
+                            <i class='fas fa-clipboard-check'
+                                style='font-size:48px;color:rgb(41, 138, 230); padding: 1rem'></i>
+                            <div class="tittleDes">
+                                <h5 class="cardTitle" style="padding-top: 0;">Great Solution</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+        <!-- mifg section end....... -->
+
         <!-- circular progress start.... -->
         <section id="circularProgress" class="circularProgress">
-           <div class="mainWrapper">
-            <div class="wrapper">
-                <svg class="item">
-                    <circle class="circle" cx="50%" cy="50%" r="45%"></circle>
-                    <circle class="bar" cx="50%" cy="50%" r="45%"></circle>
-                </svg>
-                <div class="content">75%</div>
-                <div class="td">
-                    <h5>Innovations</h5>
-                    <p>Lorem ipsum dolor sit amet.</p>
+            <div class="mainWrapper">
+                <div class="wrapper">
+                    <svg class="item">
+                        <circle class="circle" cx="50%" cy="50%" r="45%"></circle>
+                        <circle class="bar" cx="50%" cy="50%" r="45%"></circle>
+                    </svg>
+                    <div class="content">75%</div>
+                    <div class="td">
+                        <h5>Innovations</h5>
+                        <p>Lorem ipsum dolor sit amet.</p>
                     </div>
+                </div>
             </div>
-           </div>
             <div class="mainWrapper">
                 <div class="wrapper">
                     <svg class="item">
@@ -232,26 +235,26 @@ $(document).ready(function(){
                     <div class="td">
                         <h5>Big Projects</h5>
                         <p>Lorem ipsum dolor sit amet.</p>
-                        </div>
-                  
-                    
+                    </div>
+
+
                 </div>
             </div>
-            
 
-           <div class="mainWrapper">
-            <div class="wrapper">
-                <svg class="item">
-                    <circle class="circle" cx="50%" cy="50%" r="45%"></circle>
-                    <circle class="bar2" cx="50%" cy="50%" r="45%"></circle>
-                </svg>
-                <div class="content">72%</div>
-                <div class="td">
-                    <h5>Action Plans</h5>
-                    <p>Lorem ipsum dolor sit.</p>
+
+            <div class="mainWrapper">
+                <div class="wrapper">
+                    <svg class="item">
+                        <circle class="circle" cx="50%" cy="50%" r="45%"></circle>
+                        <circle class="bar2" cx="50%" cy="50%" r="45%"></circle>
+                    </svg>
+                    <div class="content">72%</div>
+                    <div class="td">
+                        <h5>Action Plans</h5>
+                        <p>Lorem ipsum dolor sit.</p>
                     </div>
+                </div>
             </div>
-           </div>
             <div class="mainWrapper">
                 <div class="wrapper">
                     <svg class="item">
@@ -262,7 +265,7 @@ $(document).ready(function(){
                     <div class="td">
                         <h5>Great Tests</h5>
                         <p>Lorem ipsum dolor sit.</p>
-                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -270,75 +273,75 @@ $(document).ready(function(){
 
         <!-- price section start....... -->
         <section id="price" class="price">
-            <div class="priceCards"> 
+            <div class="priceCards">
 
                 <div class="priceCard1">
                     <div class="prices">
                         <h2>$12</h2>
-                     <p>EVERY MONTH OR YEARLY.</p>
+                        <p>EVERY MONTH OR YEARLY.</p>
                     </div>
                     <div class="tittleDes">
-                    <h5 class="cardTitle" style="padding-top: 0;">Personal we think ahead</h5>
-                    <ul class="">
-                        <li class="">Mobile-Optimized</li>
-                        <li class="">Free Custom Domain</li>
-                        <li class="">Best Hosting</li>
-                        <li class="">Outstanding Support</li>
-                        <li class="">Happy Customer</li>
-                    </ul>
-                    <div class="buttonH">
-                        <a href="#" class="cta-button">Read More</a>
+                        <h5 class="cardTitle" style="padding-top: 0;">Personal we think ahead</h5>
+                        <ul class="">
+                            <li class="">Mobile-Optimized</li>
+                            <li class="">Free Custom Domain</li>
+                            <li class="">Best Hosting</li>
+                            <li class="">Outstanding Support</li>
+                            <li class="">Happy Customer</li>
+                        </ul>
+                        <div class="buttonH">
+                            <a href="#" class="cta-button">Read More</a>
+                        </div>
                     </div>
-                   </div>
-                
+
                 </div>
                 <div class="priceCard2">
                     <div class="prices">
                         <h2>$37</h2>
-                     <p>EVERY MONTH OR YEARLY.</p>
+                        <p>EVERY MONTH OR YEARLY.</p>
                     </div>
                     <div class="tittleDes">
-                    <h5 class="cardTitle" style="padding-top: 0;">Buisness special offer</h5>
-                    <ul class="">
-                        <li class="">Mobile-Optimized</li>
-                        <li class="">Free Custom Domain</li>
-                        <li class="">Best Hosting</li>
-                        <li class="">Outstanding Support</li>
-                        <li class="">Happy Customer</li>
-                    </ul>
-                    <div class="buttonH">
-                        <a href="#" class="cta-button">Read More</a>
+                        <h5 class="cardTitle" style="padding-top: 0;">Buisness special offer</h5>
+                        <ul class="">
+                            <li class="">Mobile-Optimized</li>
+                            <li class="">Free Custom Domain</li>
+                            <li class="">Best Hosting</li>
+                            <li class="">Outstanding Support</li>
+                            <li class="">Happy Customer</li>
+                        </ul>
+                        <div class="buttonH">
+                            <a href="#" class="cta-button">Read More</a>
+                        </div>
                     </div>
-                   </div>
-                
+
                 </div>
                 <div class="priceCard3">
                     <div class="prices">
                         <h2>$78</h2>
-                     <p>EVERY MONTH OR YEARLY.</p>
+                        <p>EVERY MONTH OR YEARLY.</p>
                     </div>
                     <div class="tittleDes">
-                    <h5 class="cardTitle" style="padding-top: 0;">Enterprise our best solution</h5>
-                    <ul class="">
-                        <li class="">Mobile-Optimized</li>
-                        <li class="">Free Custom Domain</li>
-                        <li class="">Best Hosting</li>
-                        <li class="">Outstanding Support</li>
-                        <li class="">Happy Customer</li>
-                    </ul>
-                    <div class="buttonH">
-                        <a href="#" class="cta-buttonR">Read More</a>
+                        <h5 class="cardTitle" style="padding-top: 0;">Enterprise our best solution</h5>
+                        <ul class="">
+                            <li class="">Mobile-Optimized</li>
+                            <li class="">Free Custom Domain</li>
+                            <li class="">Best Hosting</li>
+                            <li class="">Outstanding Support</li>
+                            <li class="">Happy Customer</li>
+                        </ul>
+                        <div class="buttonH">
+                            <a href="#" class="cta-buttonR">Read More</a>
+                        </div>
                     </div>
-                   </div>
-                
+
                 </div>
 
 
 
-               </div>
+            </div>
         </section>
         <!-- price section end....... -->
-        
+
         <!-- <section id="about" class="about">
             <h2>About Us</h2>
         </section> -->
@@ -346,72 +349,80 @@ $(document).ready(function(){
         <!-- contact secttion start -->
         <section id="contact" class="contact">
             <div class="contacts">
-             <div class="fotonSocial">
-               <div class="titleDesIcons">
-                 <h4>FlexiFlow</h4>
-                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Aliquid, placeat! Officia vero quasi ad, nesciunt porro
-                       deleniti dolor maiores expedita!
-                 </p>
-                 <div class="icons">
-                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="#"><i class="fa-brands fa-square-x-twitter"></i></a>
-                    <a href="#"><i class="fa-brands fa-google-plus"></i></a>
+                <div class="fotonSocial">
+                    <div class="titleDesIcons">
+                        <h4>FlexiFlow</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Aliquid, placeat! Officia vero quasi ad, nesciunt porro
+                            deleniti dolor maiores expedita!
+                        </p>
+                        <div class="icons">
+                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#"><i class="fa-brands fa-square-x-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-google-plus"></i></a>
+                        </div>
+
+                    </div>
                 </div>
- 
-               </div>
-             </div>
-             <div class="fotonSocial">
-               <div class="titleDesIcons">
-                 <h5>Contact Info</h5>
-                 <ul class="contactIcons">
-                    <li class=""><i class="fa-solid fa-location-dot"></i><h6>Merul Badda, Dhaka-1212</h6></li>
-                    <li class=""><i class="fa-solid fa-thumbtack"></i><h6>Dhaka, Bangladesh</h6></li>
-                    <li class=""><i class="fa-regular fa-envelope"></i><h6>ratulhasan9369@gmail.com</h6></li>
-                    <li class=""><i class="fa-solid fa-phone"></i><h6>+88 01740822087</h6></li>
-                 </ul>
-                 <div class="icons">
-                    
-                 </div>
- 
-               </div>
-             </div>
-             <div class="fotonSocial">
-               <div class="titleDesIcons">
-                 <h5>Could not connect with Instagram</h5>
-                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta delectus tempore cupiditate
-                     accusamus illo. Dolores at recusandae exercitationem? Error, reiciendis?</p>
-                
-               </div>
-             </div>
-             <div class="fotonSocial">
-               <div class="titleDesIcons">
-                 <h5>Support & Download</h5>
-                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Aliquid, placeat! Officia vero quasi ad, nesciunt porro
-                       deleniti dolor maiores expedita!
-                 </p>
-                 <div class="imgLogo">
-                     <a href="https://play.google.com/store/apps?hl=en">
-                         <img class="playStore" src="/images/app-store-icons-google-play.png" alt="">
-                     </a>
-                     <a href="https://www.apple.com/app-store/">
-                         <img class="appStore" src="/images/1.png" alt="">
-                     </a>
-                     
-                 </div>
- 
-               </div>
-             </div>
+                <div class="fotonSocial">
+                    <div class="titleDesIcons">
+                        <h5>Contact Info</h5>
+                        <ul class="contactIcons">
+                            <li class=""><i class="fa-solid fa-location-dot"></i>
+                                <h6>Merul Badda, Dhaka-1212</h6>
+                            </li>
+                            <li class=""><i class="fa-solid fa-thumbtack"></i>
+                                <h6>Dhaka, Bangladesh</h6>
+                            </li>
+                            <li class=""><i class="fa-regular fa-envelope"></i>
+                                <h6>ratulhasan9369@gmail.com</h6>
+                            </li>
+                            <li class=""><i class="fa-solid fa-phone"></i>
+                                <h6>+88 01740822087</h6>
+                            </li>
+                        </ul>
+                        <div class="icons">
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="fotonSocial">
+                    <div class="titleDesIcons">
+                        <h5>Could not connect with Instagram</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta delectus tempore cupiditate
+                            accusamus illo. Dolores at recusandae exercitationem? Error, reiciendis?</p>
+
+                    </div>
+                </div>
+                <div class="fotonSocial">
+                    <div class="titleDesIcons">
+                        <h5>Support & Download</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Aliquid, placeat! Officia vero quasi ad, nesciunt porro
+                            deleniti dolor maiores expedita!
+                        </p>
+                        <div class="imgLogo">
+                            <a href="https://play.google.com/store/apps?hl=en">
+                                <img class="playStore" src="/images/app-store-icons-google-play.png" alt="">
+                            </a>
+                            <a href="https://www.apple.com/app-store/">
+                                <img class="appStore" src="/images/1.png" alt="">
+                            </a>
+
+                        </div>
+
+                    </div>
+                </div>
             </div>
-         </section>
+        </section>
         <!-- contact section end -->
     </main>
 
     <footer>
         <p>&copy; 2024 FlexiFlow. All rights reserved.</p>
     </footer>
-    
     <script src="/script.js"></script>
 </body>
+
 </html>
